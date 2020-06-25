@@ -1,4 +1,59 @@
 <!DOCTYPE html>
-<html> 
- <h1>Hello QWorld!</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <script>
+    window.addEventListener('keydown', function(e){
+        const audio = document.querySelector(`.b${e.keyCode}`);
+        audio.play();
+    })
+    </script>a
+    <div class="mpc">
+        <div class="row">
+            <div class="pad"><kbd>1</kbd></div>
+            <div class="pad"><kbd>2</kbd></div>
+            <div class="pad"><kbd>3</kbd></div>
+            <div class="pad"><kbd>4</kbd></div>
+        </div>
+        <div class="row">
+            <div class="pad"><kbd>q</kbd></div>
+            <div class="pad"><kbd>w</kbd></div>
+            <div class="pad"><kbd>e</kbd></div>
+            <div class="pad"><kbd>r</kbd></div>
+        </div>
+        <div class="row">
+            <div class="pad"><kbd>a</kbd></div>
+            <div class="pad"><kbd>s</kbd></div>
+            <div class="pad"><kbd>d</kbd></div>
+            <div class="pad"><kbd>f</kbd></div>
+        </div>
+        <div class="row">
+            <div class="pad"><kbd>z</kbd></div>
+            <div class="pad"><kbd>x</kbd></div>
+            <div class="pad"><kbd>c</kbd></div>
+            <div class="pad"><kbd>v</kbd></div>            
+        </div>
+    </div>  
+    <audio src="audio/block.wav" class="b49"></audio>
+    <audio src="audio/cowbell.wav" class="b50"></audio>
+    <audio src="audio/shaker.wav" class="b51"></audio>
+    <audio src="audio/splash.wav" class="b52"></audio>
+    <audio src="audio/floortom.wav" class="b81"></audio>
+    <audio src="audio/midtom.wav" class="b87"></audio>
+    <audio src="audio/hightom.wav" class="b69"></audio>
+    <audio src="audio/ride.wav" class="b82"></audio>
+    <audio src="audio/snare2.wav" class="b65"></audio>
+    <audio src="audio/snare.wav" class="b83"></audio>
+    <audio src="audio/hat.wav" class="b68"></audio>
+    <audio src="audio/crash.wav" class="b70"></audio>
+    <audio src="audio/kick.wav" class="b90"></audio>
+    <audio src="audio/kick2.wav" class="b88"></audio>
+    <audio src="audio/clap2.wav" class="b67"></audio>
+    <audio src="audio/clap.wav" class="b86"></audio>
+</body>
 </html>

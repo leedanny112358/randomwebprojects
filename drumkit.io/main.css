@@ -1,0 +1,15 @@
+.mpc{
+    margin: 0 auto;
+    width: 50vw;
+
+}
+
+.row{
+    width: 50vw;
+    text-align: center;
+}
+
+.pad{
+    display: inline;
+    font-size: 10vw;
+}
