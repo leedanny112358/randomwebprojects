@@ -1,15 +1,28 @@
 .mpc{
-    margin: 0 auto;
-    width: 50vw;
-
+    margin: auto;
+    width: 500px;
 }
 
 .row{
-    width: 50vw;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between  ;
+    width: 500px;
 }
 
 .pad{
-    display: inline;
-    font-size: 10vw;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+    background-color: gray;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.07s;
+}
+
+.triggered{
+    opacity: 50%;
 }

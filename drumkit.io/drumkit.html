@@ -8,35 +8,42 @@
 </head>
 <body>
     <script>
-    window.addEventListener('keydown', function(e){
-        const audio = document.querySelector(`.b${e.keyCode}`);
+    window.addEventListener('keydown', function(event){
+        const audio = document.querySelector(`.b${event.keyCode}`);
+        const pad = document.querySelector(`.c${event.keyCode}`);
+        audio.currentTime = 0;
         audio.play();
-    })
-    </script>a
+        pad.classList.add('triggered');
+        setTimeout(function(){
+            pad.classList.remove('triggered')
+        }, 50);
+    });
+
+    </script>
     <div class="mpc">
         <div class="row">
-            <div class="pad"><kbd>1</kbd></div>
-            <div class="pad"><kbd>2</kbd></div>
-            <div class="pad"><kbd>3</kbd></div>
-            <div class="pad"><kbd>4</kbd></div>
+            <div class="c49 pad"><kbd>1</kbd></div>
+            <div class="c50 pad"><kbd>2</kbd></div>
+            <div class="c51 pad"><kbd>3</kbd></div>
+            <div class="c52 pad"><kbd>4</kbd></div>
         </div>
         <div class="row">
-            <div class="pad"><kbd>q</kbd></div>
-            <div class="pad"><kbd>w</kbd></div>
-            <div class="pad"><kbd>e</kbd></div>
-            <div class="pad"><kbd>r</kbd></div>
+            <div class="c81 pad"><kbd>q</kbd></div>
+            <div class="c87 pad"><kbd>w</kbd></div>
+            <div class="c69 pad"><kbd>e</kbd></div>
+            <div class="c82 pad"><kbd>r</kbd></div>
         </div>
         <div class="row">
-            <div class="pad"><kbd>a</kbd></div>
-            <div class="pad"><kbd>s</kbd></div>
-            <div class="pad"><kbd>d</kbd></div>
-            <div class="pad"><kbd>f</kbd></div>
+            <div class="c65 pad"><kbd>a</kbd></div>
+            <div class="c83 pad"><kbd>s</kbd></div>
+            <div class="c68 pad"><kbd>d</kbd></div>
+            <div class="c70 pad"><kbd>f</kbd></div>
         </div>
         <div class="row">
-            <div class="pad"><kbd>z</kbd></div>
-            <div class="pad"><kbd>x</kbd></div>
-            <div class="pad"><kbd>c</kbd></div>
-            <div class="pad"><kbd>v</kbd></div>            
+            <div class="c90 pad"><kbd>z</kbd></div>
+            <div class="c88 pad"><kbd>x</kbd></div>
+            <div class="c67 pad"><kbd>c</kbd></div>
+            <div class="c86 pad"><kbd>v</kbd></div>            
         </div>
     </div>  
     <audio src="audio/block.wav" class="b49"></audio>
